@@ -193,6 +193,7 @@ int main()
     bdd.addEntity(themes);
     bdd.addEntity(lienThemesSite);
 
+    bdd.saveTables();
 
     return 0;
 }
