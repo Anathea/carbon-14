@@ -1,5 +1,5 @@
-#ifndef BDD_H
-#define BDD_H
+#ifndef DB_H
+#define DB_H
 
 #include <iostream>
 #include <vector>
@@ -9,8 +9,8 @@ class DB
 {
 public:
     DB();
-    DB(std::string nameBDD);
-    DB(std::string nameBDD, std::vector<Entity> tablesBDD);
+    DB(std::string nameDB);
+    DB(std::string nameDB, std::vector<Entity> tablesDB);
 
     std::vector<Entity> getTables() const;
     void setTables(const std::vector<Entity> &value);
@@ -28,4 +28,4 @@ private:
     std::vector<Entity> tables;
 };
 
-#endif // BDD_H
+#endif // DB_H

@@ -30,7 +30,7 @@ int main()
     typesIntervention.addProperty(Property("idTypeIntervention", ValueType::integer, Value(0), true));
     typesIntervention.addProperty(Property("typeIntervention", ValueType::str, Value("fouille")));
 
-    Entity sites("sites"); // TODO
+    Entity sites("sites");
     sites.addProperty(Property("idSite", ValueType::integer, Value(0), true));
     sites.addProperty(Property("nomSite", ValueType::str));
     sites.addProperty(Property("coordonnees", ValueType::str));
@@ -39,7 +39,7 @@ int main()
     sites.addProperty(Property("dateDebut", ValueType::str));
     sites.addProperty(Property("dateFin", ValueType::str));
 
-    Entity periodes("periodes"); // TODO
+    Entity periodes("periodes");
     periodes.addProperty(Property("idPeriode", ValueType::integer, Value(0), true));
     periodes.addProperty(Property("nomPeriode", ValueType::str));
 
@@ -47,11 +47,11 @@ int main()
     lienPeriodesSite.addProperty(Property("idSite", ValueType::integer));
     lienPeriodesSite.addProperty(Property("idPeriode", ValueType::integer));
 
-    Entity themes("themes"); // TODO
+    Entity themes("themes");
     themes.addProperty(Property("idTheme", ValueType::integer, Value(0), true));
     themes.addProperty(Property("nomTheme", ValueType::str));
 
-    Entity lienThemesSite("lienThemesSite"); // TODO
+    Entity lienThemesSite("lienThemesSite");
     lienThemesSite.addProperty(Property("idSite", ValueType::integer));
     lienThemesSite.addProperty(Property("idTheme", ValueType::integer));
 
