@@ -53,10 +53,16 @@ int Value::getDataInt() const
 
 std::string Value::exportData() const
 {
+    if (type == ValueType::uninitialized)
+    {
+        return "";
+    }
+
     if (type != ValueType::str)
     {
         return std::to_string(this->getDataInt());
     }
+
     return this->getDataStr();
 }
 
