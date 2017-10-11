@@ -13,8 +13,6 @@ int main()
         return 0;
     }
 
-    Utile::printVectorVectorVector(csvTab);
-
     cout << "CSV to vector : ok" << endl;
 
     return 0;
